@@ -1,23 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from './components/Button.jsx';
+import logo from './images/logo-react.png'
 
 function App() {
+
+  const clicDriver = () => {
+    console.log("Click hecho");
+  }
+
+  const resetCounter = () =>{
+    console.log("reiniciar contador");
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='react-logo-contenedor'>
+        <img className='react-logo'
+          src={logo} 
+          alt='Logo de react'/>
+        
+      </div>
+      <div className='contenedor-contador'>
+          <Button 
+            text='Clic'
+            isClickButton={true}
+            clicDriver={clicDriver}
+          />
+          <Button
+            text='Reset'
+            isClickButton={false}
+            clicDriver={resetCounter}
+          />
+      </div>
     </div>
   );
 }
