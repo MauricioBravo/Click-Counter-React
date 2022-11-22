@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Button({text, isClickButton, clicDriver}){
+function Button({text, isClickButton, clicHandler}){
   
   return(
     <button
       className={ isClickButton ? 'click-button' : 'reset-button' }
-      onClick={clicDriver}> 
+      onClick={clicHandler}> 
       {text}
     </button>
   );

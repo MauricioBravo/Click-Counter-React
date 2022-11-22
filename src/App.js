@@ -4,7 +4,7 @@ import logo from './images/logo-react.png'
 
 function App() {
 
-  const clicDriver = () => {
+  const clicHandler = () => {
     console.log("Click hecho");
   }
 
@@ -25,12 +25,12 @@ function App() {
           <Button 
             text='Clic'
             isClickButton={true}
-            clicDriver={clicDriver}
+            clicHandler={clicHandler}
           />
           <Button
             text='Reset'
             isClickButton={false}
-            clicDriver={resetCounter}
+            clicHandler={resetCounter}
           />
       </div>
     </div>
