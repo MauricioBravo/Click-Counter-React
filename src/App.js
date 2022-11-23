@@ -1,6 +1,7 @@
 import './App.css';
 import Button from './components/Button.jsx';
-import logo from './images/logo-react.png'
+import logo from './images/logo-react.png';
+import ButtonStyle from './styles/ButtonStyle.css';
 
 function App() {
 
